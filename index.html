@@ -100,8 +100,15 @@ footer{padding:46px 0 72px;color:var(--muted);font-size:14px;border-top:1px soli
 .subwrap input{flex:1;min-width:220px;padding:12px 14px;border-radius:10px;border:1px solid #C7D2FE;font-size:15px}
 .subwrap button{padding:12px 22px;border-radius:10px;border:0;background:var(--indigo);color:#fff;font-weight:700;font-size:15px;cursor:pointer}
 .write .note{color:var(--muted);font-size:13px;margin-top:12px}
+/* lightbox / zoom */
+[data-zoom]{cursor:zoom-in}
+.zoom-hint{font-size:12.5px;color:#7DD3FC;margin-top:14px;text-align:center;font-weight:600}
+.lb{display:none;position:fixed;inset:0;background:rgba(8,10,18,.94);z-index:100;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 30px 90px -20px rgba(0,0,0,.9)}
+.lb .x{position:fixed;top:18px;right:24px;color:#fff;font-size:30px;font-weight:300;opacity:.8;cursor:pointer;line-height:1}
 </style></head><body>
-<nav><div class="wrap"><span class="logo">Udaya Bhaskar Reddy</span><span class="nlinks"><a href="#brain-city">Brain City</a><a href="#problem">The Idea</a><a href="#projects">Projects</a><a href="#writing">Writing</a><a href="#about">About</a></span></div></nav>
+<nav><div class="wrap"><span class="logo">Udaya Bhaskar Reddy</span><span class="nlinks"><a href="#brain-city">Brain City</a><a href="#models">Multi-model</a><a href="#problem">The Idea</a><a href="#projects">Projects</a><a href="#writing">Writing</a><a href="#about">About</a></span></div></nav>
 
 <header class="hero"><div class="wrap">
   <div class="eyebrow">Data &amp; AI Platform Lead · Energy Trading · Singapore</div>
@@ -119,7 +126,7 @@ footer{padding:46px 0 72px;color:var(--muted);font-size:14px;border-top:1px soli
   <div class="kicker">The centerpiece</div>
   <h2>The Brain City — a self-healing AI organization</h2>
   <div class="sub">Most AI tools forget everything between sessions. Vanaprastha is built the opposite way — every decision, fact, and agent's memory lives in one place you can see, run, and trust.</div>
-  <div class="shot"><img loading="lazy" src="assets/brain-city.png" alt="Vanaprastha Brain City — the organization as a living map"/></div>
+  <div class="shot"><img loading="lazy" data-zoom src="assets/brain-city.png" alt="Vanaprastha Brain City — the organization as a living map"/></div>
   <div class="cap">The Brain City: each district is a real subsystem of the organization. The system beneath it — persistent memory, specialized agents, and a self-healing supervisor — is designed, built, and running.</div>
   <div class="fcols">
     <div class="fcol"><h4>The city is the organization</h4><p>Citadel = identity &amp; source of truth. Memory Field = facts &amp; patterns. Forge = build &amp; delivery. Evidence Grid = proof of what's real. You can navigate it like a map.</p></div>
@@ -141,12 +148,54 @@ footer{padding:46px 0 72px;color:var(--muted);font-size:14px;border-top:1px soli
   <h2>Not a mockup — a working operating surface</h2>
   <div class="sub">The Brain City is the map. Underneath it is a real product: an orchestration cockpit, a live view of every project's health, and a governance layer that records exactly what shipped and why.</div>
   <div class="gal">
-    <figure><img loading="lazy" src="assets/cockpit.png" alt="Orchestration cockpit"/><figcaption><b>Orchestration cockpit</b>Every agent, task and model on one board — work moving through its lanes in real time.</figcaption></figure>
-    <figure><img loading="lazy" src="assets/project-room.png" alt="Project room"/><figcaption><b>Project room</b>One project's live state: health, brief, execution plan, artifacts and approvals.</figcaption></figure>
-    <figure><img loading="lazy" src="assets/receipt.png" alt="Receipts and verification"/><figcaption><b>Receipts &amp; verification</b>What shipped, what passed, what's pending — an audit trail you can trust.</figcaption></figure>
+    <figure><img loading="lazy" data-zoom src="assets/cockpit.png" alt="Orchestration cockpit"/><figcaption><b>Orchestration cockpit</b>Every agent, task and model on one board — work moving through its lanes in real time.</figcaption></figure>
+    <figure><img loading="lazy" data-zoom src="assets/project-room.png" alt="Project room"/><figcaption><b>Project room</b>One project's live state: health, brief, execution plan, artifacts and approvals.</figcaption></figure>
+    <figure><img loading="lazy" data-zoom src="assets/receipt.png" alt="Receipts and verification"/><figcaption><b>Receipts &amp; verification</b>What shipped, what passed, what's pending — an audit trail you can trust.</figcaption></figure>
   </div>
+  <div class="zoom-hint">↗ Click any panel to enlarge</div>
   <div class="cap">Every task follows the same disciplined loop — intent, approved dispatch, isolated build, gated tests, and a receipt written only when the whole path is true. When something blocks, the system says so; it never fakes success.</div>
 </div></section>
+<section class="sec" id="models"><style>#models li:before{background:#0EA5A4}</style>
+ <div class="wrap">
+  <div class="kicker" style="color:#0EA5A4">Model-agnostic</div>
+  <h2>Claude and ChatGPT in the same room — no API bill</h2>
+  <div class="sub">Most agent tools are married to one model and metered by the token. Vanaprastha runs multiple frontier models together, on the subscriptions you already pay for.</div>
+  <div class="row flip">
+   <div class="txt">
+    <p>Claude and GPT-5 / Codex work the same task <strong>side by side</strong> — one builds, the other reviews, and they catch each other's mistakes. Different models have different blind spots; together they reach better judgment than either alone.</p>
+    <p><strong>No API dependency.</strong> It drives the desktop apps you already subscribe to — not metered API keys — so heavy multi-agent runs don't arrive with a per-token bill.</p>
+    <ul>
+     <li>Two frontier models in one workflow — mutual review, not a single point of failure</li>
+     <li>Runs on subscriptions, not API tokens — predictable cost at any scale</li>
+     <li>Model-agnostic — add Grok, Gemini, or any LLM as it ships</li>
+    </ul>
+   </div>
+   <div class="fig"><svg viewBox="0 0 720 372" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Segoe UI,Inter,sans-serif">
+ <defs><marker id="mm" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#94A3B8"/></marker></defs>
+ <g fill="none" stroke-width="2.2" stroke-dasharray="5 7" marker-end="url(#mm)">
+  <line x1="216" y1="92" x2="298" y2="142" stroke="#4F46E5"><animate attributeName="stroke-dashoffset" values="24;0" dur="1s" repeatCount="indefinite"/></line>
+  <line x1="216" y1="154" x2="298" y2="164" stroke="#16A34A"><animate attributeName="stroke-dashoffset" values="24;0" dur="1.1s" repeatCount="indefinite"/></line>
+  <line x1="216" y1="224" x2="298" y2="190" stroke="#94A3B8"><animate attributeName="stroke-dashoffset" values="24;0" dur="1.25s" repeatCount="indefinite"/></line>
+  <line x1="454" y1="166" x2="534" y2="166" stroke="#7C3AED"><animate attributeName="stroke-dashoffset" values="24;0" dur="1.05s" repeatCount="indefinite"/></line>
+ </g>
+ <g><rect x="30" y="68" width="186" height="48" rx="11" fill="#FFFFFF" stroke="#4F46E5" stroke-width="1.5"/><circle cx="50" cy="92" r="5" fill="#4F46E5"/><text x="66" y="89" font-size="13.5" font-weight="700" fill="#1A1A2E">Claude</text><text x="66" y="105" font-size="10" fill="#64748B">Anthropic</text></g>
+ <g><rect x="30" y="130" width="186" height="48" rx="11" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/><circle cx="50" cy="154" r="5" fill="#16A34A"/><text x="66" y="151" font-size="13.5" font-weight="700" fill="#1A1A2E">GPT-5 · Codex</text><text x="66" y="167" font-size="10" fill="#64748B">OpenAI</text></g>
+ <g><rect x="30" y="200" width="186" height="48" rx="11" fill="#F7F8FC" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="4 4"/><text x="48" y="221" font-size="12" font-weight="700" fill="#475569">+ Grok · Gemini · any LLM</text><text x="48" y="237" font-size="10" fill="#94A3B8">pluggable — model-agnostic</text></g>
+ <text x="232" y="126" font-size="10" font-weight="700" fill="#7C3AED">cross-check</text>
+ <rect x="298" y="120" width="156" height="92" rx="14" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.5"/>
+ <text x="376" y="156" text-anchor="middle" font-size="14" font-weight="800" fill="#1A1A2E">Orchestration</text>
+ <text x="376" y="175" text-anchor="middle" font-size="10.5" fill="#64748B">one app · many models</text>
+ <text x="376" y="194" text-anchor="middle" font-size="9.5" font-weight="700" fill="#4F46E5">Vyasa · Shukra</text>
+ <rect x="534" y="140" width="156" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+ <text x="612" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#1A1A2E">Your work</text>
+ <text x="612" y="180" text-anchor="middle" font-size="9.5" fill="#64748B">built · reviewed · shipped</text>
+ <rect x="150" y="286" width="170" height="32" rx="16" fill="#ECFEFF" stroke="#0EA5A4"/><text x="235" y="306" text-anchor="middle" font-size="12" font-weight="700" fill="#0E7490">No API keys</text>
+ <rect x="350" y="286" width="232" height="32" rx="16" fill="#F5F3FF" stroke="#7C3AED"/><text x="466" y="306" text-anchor="middle" font-size="12" font-weight="700" fill="#6D28D9">Subscriptions, not tokens</text>
+ <text x="360" y="352" text-anchor="middle" font-size="11.5" fill="#64748B">Frontier models that cross-check each other — model-agnostic, on subscriptions, not API tokens.</text>
+</svg></div>
+  </div>
+ </div>
+</section>
 
 <section class="philo" id="philosophy"><div class="wrap">
   <div class="kicker" style="color:#4F46E5">Why I build in the open</div>
@@ -816,4 +865,13 @@ footer{padding:46px 0 72px;color:var(--muted);font-size:14px;border-top:1px soli
   </div>
 </div></section>
 <footer><div class="wrap">© 2026 Udaya Bhaskar Reddy · <a href="mailto:mudaybr@gmail.com">mudaybr@gmail.com</a> · <a href="https://github.com/udaybhaskar000">GitHub</a></div></footer>
+<div id="lb" class="lb"><span class="x">&times;</span><img alt="enlarged view"/></div>
+<script>
+(function(){var lb=document.getElementById('lb'),li=lb.querySelector('img');
+function open(src){li.src=src;lb.classList.add('open');document.body.style.overflow='hidden';}
+function close(){lb.classList.remove('open');li.removeAttribute('src');document.body.style.overflow='';}
+document.querySelectorAll('[data-zoom]').forEach(function(im){im.addEventListener('click',function(){open(im.currentSrc||im.src);});});
+lb.addEventListener('click',close);
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});})();
+</script>
 </body></html>
