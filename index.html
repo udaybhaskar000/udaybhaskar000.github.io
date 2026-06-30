@@ -118,7 +118,7 @@ footer{padding:46px 0 72px;color:var(--muted);font-size:14px;border-top:1px soli
 .lb img{max-width:100%;max-height:100%;border-radius:10px;box-shadow:0 30px 90px -20px rgba(0,0,0,.9)}
 .lb .x{position:fixed;top:18px;right:24px;color:#fff;font-size:30px;font-weight:300;opacity:.8;cursor:pointer;line-height:1}
 </style></head><body>
-<nav><div class="wrap"><span class="logo">Udaya Bhaskar Reddy</span><span class="nlinks"><a href="#brain-city">Brain City</a><a href="#models">Multi-model</a><a href="#problem">The Idea</a><a href="#projects">Projects</a><a href="#writing">Writing</a><a href="#about">About</a></span></div></nav>
+<nav><div class="wrap"><span class="logo">Udaya Bhaskar Reddy</span><span class="nlinks"><a href="#what">Overview</a><a href="#brain-city">Brain City</a><a href="#models">Multi-model</a><a href="#problem">The Idea</a><a href="#projects">Projects</a><a href="#writing">Writing</a><a href="#about">About</a></span></div></nav>
 
 <header class="hero"><div class="wrap">
   <div class="eyebrow">Data &amp; AI Platform Lead · Energy Trading · Singapore</div>
@@ -132,16 +132,36 @@ footer{padding:46px 0 72px;color:var(--muted);font-size:14px;border-top:1px soli
   </div>
 </div></header>
 
+<section class="sec" id="what" style="border-top:0;padding-top:34px">
+<style>
+#what .caps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:24px}
+#what .cap-card{border:1px solid var(--line);border-radius:12px;padding:15px;background:#fff}
+#what .cap-card b{display:block;font-size:14px;margin-bottom:5px}
+#what .cap-card span{font-size:12px;color:#64748B;line-height:1.5}
+@media(max-width:860px){#what .caps{grid-template-columns:repeat(2,1fr)}}
+</style>
+<div class="wrap">
+  <div class="kicker" style="color:#4F46E5">What it is — in one glance</div>
+  <h2>A governed, self-healing multi-agent system</h2>
+  <div class="sub">Vanaprastha takes work from a single command to dependable, shipped output — many AI models working together under memory, proof, and your approval, where the whole is greater than the sum of its parts. The operating layer, not the model, is the moat.</div>
+  <div class="caps">
+    <div class="cap-card"><b style="color:#4F46E5">Multi-model</b><span>Claude + Codex — and any LLM — in one workflow</span></div>
+    <div class="cap-card"><b style="color:#0EA5A4">Model-agnostic</b><span>No vendor lock-in, no per-token API bill</span></div>
+    <div class="cap-card"><b style="color:#16A34A">Self-healing</b><span>Detects, fixes and proves issues on its own</span></div>
+    <div class="cap-card"><b style="color:#7C3AED">Persistent memory</b><span>Decisions &amp; proof kept across every run</span></div>
+    <div class="cap-card"><b style="color:#F59E0B">Human-gated</b><span>Agents propose; you approve what matters</span></div>
+  </div>
+</div></section>
 <section class="feature" id="brain-city"><div class="wrap">
-  <div class="kicker">The centerpiece</div>
-  <h2>The Brain City — a self-healing AI organization</h2>
-  <div class="sub">Most AI tools forget everything between sessions. Vanaprastha is built the opposite way — every decision, fact, and agent's memory lives in one place you can see, run, and trust.</div>
+  <div class="kicker">The Brain City</div>
+  <h2>The Brain City — the organization as a living map</h2>
+  <div class="sub">Every part of the organization is a place on the map. Memory, delivery, proof, the agents themselves — each is a district you can open, watch, and trace. Nothing is buried in a chat log.</div>
   <div class="shot"><img loading="lazy" data-zoom src="assets/brain-city.png" alt="Vanaprastha Brain City — the organization as a living map"/></div>
-  <div class="cap">The Brain City: each district is a real subsystem of the organization. The system beneath it — persistent memory, specialized agents, and a self-healing supervisor — is designed, built, and running.</div>
+  <div class="cap">Each district is a real subsystem, wired to the others into one organization you can navigate.</div>
   <div class="fcols">
-    <div class="fcol"><h4>The city is the organization</h4><p>Citadel = identity &amp; source of truth. Memory Field = facts &amp; patterns. Forge = build &amp; delivery. Evidence Grid = proof of what's real. You can navigate it like a map.</p></div>
-    <div class="fcol"><h4>It heals itself</h4><p>A supervisor agent watches the whole city — a failing deploy, a stale fact, a drifting agent — diagnoses the trouble, and repairs it without waiting to be asked.</p></div>
-    <div class="fcol"><h4>It remembers</h4><p>Persistent, governed memory across every agent and session — so the system compounds what it learns instead of starting from zero each time.</p></div>
+    <div class="fcol"><h4>The city is the organization</h4><p>The Citadel holds identity and the source of truth. The Memory Field keeps facts and decisions. The Forge builds and ships. The Evidence Grid proves what's real. The Guilds are the agents; the Observatory watches the signals.</p></div>
+    <div class="fcol"><h4>It heals itself</h4><p>A supervisor watches the whole city — a failing deploy, a stale fact, a drifting agent — finds the trouble and routes it to the right fix, instead of waiting for someone to notice.</p></div>
+    <div class="fcol"><h4>It remembers</h4><p>Every decision and receipt is kept across agents and sessions, so the city compounds what it learns instead of starting from zero each morning.</p></div>
   </div>
   <div class="chips">
     <span class="chip">🏛 Citadel · identity</span>
@@ -153,10 +173,32 @@ footer{padding:46px 0 72px;color:var(--muted);font-size:14px;border-top:1px soli
   </div>
 </div></section>
 
+
+<section class="sec" id="connect"><style>#connect li:before{background:#16A34A}</style><div class="wrap">
+  <div class="kicker" style="color:#16A34A">How issues get solved</div>
+  <h2>A self-governing, self-healing system</h2>
+  <div class="sub">When something breaks, the city doesn't wait for someone to notice. It detects the issue, dispatches the right agent, fixes it, proves the fix, records what it learned, and restores health — a governed repair loop you can watch end to end.</div>
+  <div class="fig" style="padding:10px;background:#FBFCFE"><img loading="lazy" data-zoom src="assets/brain-city-flow.png" alt="Brain City — the self-healing repair workflow" style="width:100%;display:block;border-radius:8px"/></div>
+  <div class="zoom-hint" style="color:#16A34A">↗ Click to enlarge</div>
+  <div class="sub" style="margin-top:18px"><strong>The repair loop:</strong> Issue Detected → Dispatch Agent → Build Fix → Gate Approved → Proof Verified → Memory Updated → Restored.</div>
+</div></section>
+<section class="sec" id="how-built"><style>#how-built li:before{background:#4F46E5}</style><div class="wrap">
+  <div class="kicker" style="color:#4F46E5">How it's built</div>
+  <h2>The full stack, end to end</h2>
+  <div class="sub">One picture of the whole runtime — from the Mac, through the app, to multiple AI models working under memory, proof, and your approval.</div>
+  <div class="fig" style="padding:10px;background:#FBFCFE"><img loading="lazy" data-zoom src="assets/runtime-flow.gif" alt="Vanaprastha runtime flow — from command to governed multi-agent work" style="width:100%;display:block;border-radius:8px"/></div>
+  <div class="zoom-hint" style="color:#4F46E5">↗ Click to enlarge</div>
+  <div class="txt" style="margin-top:20px"><ul>
+    <li><strong>Two halves</strong> — the Renderer shows the UI; the Main process controls the trusted work behind it.</li>
+    <li><strong>Multi-model &amp; model-agnostic</strong> — the orchestrator routes work to Claude and Codex lanes, and any model you add. The orchestration owns the project, not the model.</li>
+    <li><strong>Persistent memory</strong> — project memory keeps facts, decisions and history across every run.</li>
+    <li><strong>The moat is the loop</strong> — real agents + tests &amp; proof + a human gate, not just chat. That loop is what makes the work dependable.</li>
+  </ul></div>
+</div></section>
 <section class="feature" id="inside"><div class="wrap">
   <div class="kicker">Inside the system</div>
-  <h2>Not a mockup — a working operating surface</h2>
-  <div class="sub">The Brain City is the map. Underneath it is a real product: an orchestration cockpit, a live view of every project's health, and a governance layer that records exactly what shipped and why.</div>
+  <h2>The operating surface</h2>
+  <div class="sub">The Brain City is the map. Underneath it is the surface where the work runs: an orchestration cockpit, a live view of every project's health, and a governance layer that records exactly what shipped and why.</div>
   <div class="gal">
     <figure><img loading="lazy" data-zoom src="assets/cockpit.png" alt="Orchestration cockpit"/><figcaption><b>Orchestration cockpit</b>Every agent, task and model on one board — work moving through its lanes in real time.</figcaption></figure>
     <figure><img loading="lazy" data-zoom src="assets/project-room.png" alt="Project room"/><figcaption><b>Project room</b>One project's live state: health, brief, execution plan, artifacts and approvals.</figcaption></figure>
@@ -207,11 +249,6 @@ footer{padding:46px 0 72px;color:var(--muted);font-size:14px;border-top:1px soli
  </div>
 </section>
 
-<section class="philo" id="philosophy"><div class="wrap">
-  <div class="kicker" style="color:#4F46E5">Why I build in the open</div>
-  <div class="q">Knowledge is only worth something when it's <em>used — and used well.</em></div>
-  <p>Vanaprastha is the forest stage of life: where you stop accumulating and start giving back what you know. The most useful thing I own is what I've learned shipping real systems — and that is worth far more shared than hoarded.</p>
-</div></section>
 
 <section class="sec" id="problem"><style>#problem li:before{background:#FB7185}</style>
  <div class="wrap">
@@ -873,6 +910,11 @@ footer{padding:46px 0 72px;color:var(--muted);font-size:14px;border-top:1px soli
     <div class="metric"><b style="color:#F59E0B">Shell CIO Award</b><span>Business Outcomes · 2024</span></div>
     <div class="metric"><b style="color:#16A34A">GenAI Hackathon</b><span>Winner · 2025</span></div>
   </div>
+</div></section>
+<section class="philo" id="philosophy" style="background:linear-gradient(160deg,#F6F8FF,#F0FBFB);border-top:1px solid var(--line)"><div class="wrap">
+  <div class="kicker" style="color:#4F46E5">Why I build in the open</div>
+  <div class="q">For the things we have to learn before we can do them, <em>we learn by doing them.</em></div><div style="color:#94A3B8;font-size:14px;font-weight:600;letter-spacing:.04em;margin:-4px auto 16px">— Aristotle, Nicomachean Ethics</div>
+  <p>Vanaprastha is the forest stage of life: where you stop accumulating and start giving back what you know. The most useful thing I own is what I've learned shipping real systems — and that is worth far more shared than hoarded.</p>
 </div></section>
 <footer><div class="wrap">© 2026 Udaya Bhaskar Reddy · <a href="mailto:mudaybr@gmail.com">mudaybr@gmail.com</a> · <a href="https://github.com/udaybhaskar000">GitHub</a></div></footer>
 <div id="lb" class="lb"><span class="x">&times;</span><img alt="enlarged view"/></div>
